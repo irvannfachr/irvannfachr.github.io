@@ -1,0 +1,597 @@
+/* ================================
+   DASAR
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f9ff;
+  color: #17365d;
+  overflow-x: hidden;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  background: rgba(13, 110, 253, 0.95) !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #cce3ff !important;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  background: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.18), transparent 25%), radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.15), transparent 25%), linear-gradient(135deg, #0d6efd, #2196f3, #0062cc);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(8px);
+
+  font-size: 14px;
+}
+
+.hero h1 span {
+  color: #bde0ff;
+}
+
+.hero-description {
+  max-width: 620px;
+  line-height: 1.9;
+  color: #e4f2ff;
+}
+
+/* ================================
+   AREA FOTO
+================================ */
+
+.hero-photo-area {
+  position: relative;
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-circle {
+  position: absolute;
+
+  width: 460px;
+  height: 460px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ================================
+   FOTO
+================================ */
+
+.photo-circle {
+  width: 310px;
+  height: 310px;
+
+  padding: 8px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, white, #90caf9, #0d6efd);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  z-index: 3;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: #eaf4ff;
+}
+
+/* ================================
+   FLOATING CARD
+================================ */
+
+.hero-card {
+  position: absolute;
+
+  padding: 14px 18px;
+
+  background: rgba(255, 255, 255, 0.96);
+  color: #17365d;
+
+  border-radius: 16px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+  z-index: 5;
+
+  min-width: 170px;
+
+  animation: floating 4s ease-in-out infinite;
+}
+
+.hero-card i {
+  color: #0d6efd;
+  font-size: 22px;
+}
+
+.hero-card small {
+  color: #718096;
+  display: block;
+  font-size: 11px;
+}
+
+.hero-card strong {
+  font-size: 14px;
+}
+
+.card-school {
+  top: 25px;
+  left: 0;
+}
+
+.card-class {
+  top: 125px;
+  right: -10px;
+}
+
+.card-hobby {
+  bottom: 115px;
+  left: -15px;
+}
+
+.card-dream {
+  bottom: 25px;
+  right: 0;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   SECTION
+================================ */
+
+section {
+  padding: 90px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-title h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0d6efd;
+}
+
+.section-title p {
+  color: #6c757d;
+}
+
+/* ================================
+   ABOUT
+================================ */
+
+.about-box {
+  background: white;
+  border-radius: 30px;
+  padding: 45px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+}
+
+.about-emoji {
+  font-size: 120px;
+}
+
+.about-box h3 {
+  font-weight: 800;
+}
+
+.about-text {
+  color: #65758b;
+  line-height: 2;
+}
+
+/* ================================
+   BIODATA
+================================ */
+
+.bio-card {
+  background: #f5f9ff;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  height: 100%;
+
+  transition: 0.3s;
+}
+
+.bio-card:hover {
+  transform: translateY(-5px);
+  background: #e8f3ff;
+}
+
+.bio-label {
+  color: #7b8794;
+  font-size: 13px;
+}
+
+.bio-value {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* ================================
+   HOBI
+================================ */
+
+.hobby-section {
+  background: #eef6ff;
+}
+
+.hobby-card {
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 30px 20px;
+
+  text-align: center;
+
+  height: 100%;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.hobby-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15);
+}
+
+.emoji {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.hobby-card h5 {
+  font-weight: 700;
+}
+
+.hobby-card p {
+  color: #7b8794;
+  font-size: 14px;
+}
+
+/* ================================
+   RANDOM
+================================ */
+
+.fun-card {
+  background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+
+  border-radius: 30px;
+
+  padding: 50px;
+
+  border: 2px dashed #90caf9;
+}
+
+.fun-emoji {
+  font-size: 65px;
+}
+
+.fun-card h3 {
+  color: #0d6efd;
+  font-weight: 800;
+}
+
+.fun-quote {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #345;
+}
+
+/* ================================
+   IMPIAN
+================================ */
+
+.dream-section {
+  background: linear-gradient(135deg, #003f88, #0d6efd);
+
+  color: white;
+}
+
+.dream-box {
+  padding: 55px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+}
+
+.japan {
+  font-size: 75px;
+}
+
+.dream-box h2 {
+  font-weight: 800;
+}
+
+/* ================================
+   KONTAK
+================================ */
+
+.contact-box {
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+}
+
+.contact-item {
+  display: flex;
+
+  align-items: center;
+
+  padding: 17px;
+
+  margin-bottom: 15px;
+
+  background: #f5f9ff;
+
+  border-radius: 15px;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dcecff;
+
+  color: #0d6efd;
+
+  font-size: 21px;
+
+  margin-right: 15px;
+
+  flex-shrink: 0;
+}
+
+.contact-item a {
+  color: #17365d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  color: #0d6efd;
+}
+
+/* ================================
+   SOCIAL
+================================ */
+
+.social {
+  display: inline-flex;
+
+  width: 52px;
+  height: 52px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #0d6efd;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 22px;
+
+  margin: 5px;
+
+  transition: 0.3s;
+}
+
+.social:hover {
+  color: white;
+
+  transform: translateY(-6px) scale(1.05);
+
+  background: #0056d6;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  background: #071a33;
+
+  color: white;
+
+  padding: 45px 0;
+}
+
+footer h4 {
+  font-weight: 800;
+}
+
+footer p {
+  color: #aebed0;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-photo-area {
+    margin-top: 30px;
+    min-height: 570px;
+  }
+}
+
+/* ================================
+   HP
+================================ */
+
+@media (max-width: 576px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin: auto;
+  }
+
+  .hero-photo-area {
+    min-height: 600px;
+  }
+
+  .photo-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hero-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero-card {
+    min-width: 145px;
+    padding: 11px 13px;
+  }
+
+  .hero-card strong {
+    font-size: 12px;
+  }
+
+  .card-school {
+    top: 35px;
+    left: 0;
+  }
+
+  .card-class {
+    top: 125px;
+    right: 0;
+  }
+
+  .card-hobby {
+    bottom: 130px;
+    left: 0;
+  }
+
+  .card-dream {
+    bottom: 40px;
+    right: 0;
+  }
+
+  .about-box,
+  .fun-card,
+  .dream-box,
+  .contact-box {
+    padding: 25px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .contact-item {
+    align-items: flex-start;
+  }
+}
